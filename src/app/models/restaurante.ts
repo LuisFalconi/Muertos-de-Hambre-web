@@ -5,5 +5,5 @@ export class Restaurante {
     horario: string;
     direccion: string;
     capacidad: string;
-    tipoLocal: string; 
+    tipoLocal: string;
 }

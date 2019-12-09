@@ -5,13 +5,22 @@
             true,
             "attribute",
             "app",
-            "camelCase"
+            "camelCase",
+            "eofline: true"
         ],
         "component-selector": [
             true,
             "element",
             "app",
             "kebab-case"
+        ],
+        "whitespace": [
+            false,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
         ]
     }
 }

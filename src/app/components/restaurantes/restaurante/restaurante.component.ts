@@ -8,7 +8,7 @@ import {ToastrService} from 'ngx-toastr';
 
 // Restaurante Class
 import { Restaurante } from 'src/app/models/restaurante';
-   
+
 @Component({
   selector: 'app-restaurante',
   templateUrl: './restaurante.component.html',
@@ -27,20 +27,20 @@ export class RestauranteComponent implements OnInit {
   }
 
   onSubmit(restaurantForm: NgForm){
-    if(restaurantForm.value.$key == null)
+    if(restaurantForm.value.$key == null) {
       this.restauranteService.insterRestaurant(restaurantForm.value)
-    else
+    } else {
       this.restauranteService.updateRestaurant(restaurantForm.value);
+    }
 
     this.resetForm(restaurantForm);
     this.toastr.success('Operacion realizada', 'Restaurante agregado');
   }
 
   resetForm(restaurantForm?: NgForm){
-    if(restaurantForm != null){
+    if (restaurantForm != null){
       restaurantForm.reset();
       this.restauranteService.selectedRestaurant = new Restaurante();
     }
   }
 }
- 
