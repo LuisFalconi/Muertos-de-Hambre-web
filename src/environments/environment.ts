@@ -9,7 +9,7 @@ export const environment = {
     authDomain: "muertosdehambre-web.firebaseapp.com",
     databaseURL: "https://muertosdehambre-web.firebaseio.com",
     projectId: "muertosdehambre-web",
-    storageBucket: "",
+    storageBucket: "gs://muertosdehambre-web.appspot.com",
     messagingSenderId: "98651289321",
     appId: "1:98651289321:web:109502f9be4b9807"
   }
