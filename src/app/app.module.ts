@@ -17,17 +17,19 @@ import { environment } from '../environments/environment';
 import { RestaurantesComponent } from './components/restaurantes/restaurantes.component';
 import { ListaRestaurantesComponent } from './components/restaurantes/lista-restaurantes/lista-restaurantes.component';
 import { RestauranteComponent } from './components/restaurantes/restaurante/restaurante.component';
-
+import { UploadFormComponent }  from './components/restaurantes/upload-form/upload-form.component';
 // servive
 import {RestauranteService} from './services/restaurante.service';
-
+import {UploadService } from './services/upload.service';
+ 
 
 @NgModule({
   declarations: [
     AppComponent,
     RestaurantesComponent,
     ListaRestaurantesComponent,
-    RestauranteComponent
+    RestauranteComponent,
+    UploadFormComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import {RestauranteService} from './services/restaurante.service';
     ToastrModule.forRoot()
   ],
   providers: [
-    RestauranteService
+    RestauranteService,
+    UploadService
   ],
   bootstrap: [AppComponent]
 })
